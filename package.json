@@ -4,6 +4,24 @@
     "description": "Open iTerm2 for vscode",
     "version": "0.0.1",
     "publisher": "mushan",
+    "author": {
+        "name": "mushan",
+        "email": "mushanmail@126.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mushanshitiancai/vscode-open-iterm2.git"
+    },
+    "homepage": "https://github.com/mushanshitiancai/vscode-open-iterm2/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/mushanshitiancai/vscode-open-iterm2/issues"
+    },
+    "icon": "res/icon.png",
+    "keywords": [
+        "iTerm2",
+        "iterm2",
+        "terminal"
+    ],
     "engines": {
         "vscode": "^1.5.0"
     },
