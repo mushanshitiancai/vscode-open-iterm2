@@ -10,17 +10,17 @@ export function activate(context: vscode.ExtensionContext) {
         if (process.platform === "darwin") {
             const scriptPath = path.join(__dirname, "../../res/open-item2.scpt");
 
-console.log(e);
+            console.log(e);
             fs.stat(e.fsPath, (err, stats) => {
-                if(err) return;
+                if (err) return;
 
                 let dirPath = e.fsPath;
-                if(stats.isFile()){
+                if (stats.isFile()) {
                     dirPath = path.dirname(dirPath);
                 }
 
                 console.log(dirPath);
-                let childProcess = spawn("osascript", [scriptPath, "cd", dirPath]);
+                let childProcess = spawn("osascript", [scriptPath, "cd", `"${dirPath}"`]);
 
             });
         } else {
@@ -31,5 +31,4 @@ console.log(e);
     context.subscriptions.push(disposable);
 }
 
-export function deactivate() {
-}
+export function deactivate() {}
