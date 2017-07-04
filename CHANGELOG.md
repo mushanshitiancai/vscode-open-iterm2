@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.0.3 2017-07-04
+## 0.0.4 2017-07-04
 
 - Fix: support path contains spaces (By @dkobia)
 
